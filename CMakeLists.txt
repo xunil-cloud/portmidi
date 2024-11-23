@@ -35,6 +35,7 @@ if(PM_USE_STATIC_RUNTIME AND NOT BUILD_SHARED_LIBS)
 else()
   set(MSVCRT_DLL "DLL")
 endif()
+#add_compile_options(-Wall -Wextra)
 
 # Always build with position-independent code (-fPIC)
 set(CMAKE_POSITION_INDEPENDENT_CODE ON)
