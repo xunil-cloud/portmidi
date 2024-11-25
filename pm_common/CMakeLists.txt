@@ -50,6 +50,8 @@ target_include_directories(portmidi PUBLIC
   $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}>
   $<INSTALL_INTERFACE:${CMAKE_INSTALL_INCLUDEDIR}>)
 
+target_include_directories(portmidi INTERFACE
+  $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/../porttime>)
 
 option(PM_CHECK_ERRORS
 "Insert a check for error return values at the end of each PortMidi function.
